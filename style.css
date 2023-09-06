@@ -1,0 +1,57 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.request-form {
+    margin: 20px auto;
+    padding: 20px;
+    width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.slots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.slot {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.slot:hover {
+    background-color: #f0f0f0;
+}
+
+.slot input[type="radio"] {
+    display: none;
+}
+
+.slot-text {
+    margin-left: 10px;
+}
+
+input[type="submit"] {
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
