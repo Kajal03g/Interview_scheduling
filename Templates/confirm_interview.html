@@ -1,0 +1,44 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Interview Confirmation</title>
+</head>
+<body>
+    <h1>Interview Confirmation</h1>
+
+    {% for request in interview_requests %}
+    <h2>Interviewee: {{ request[1] }}</h2>
+    <p>Date: {{ request[2].split()[0] }}</p>
+    <p>Time: {{ request[2].split()[1] }}</p>
+    <p>Interviewee Email: {{ request[1] }}</p>
+    <form method="POST" action="/confirm">
+        <input type="hidden" name="interviewer_email" value="{{ request[0] }}">
+        <input type="hidden" name="interviewee_email" value="{{ request[1] }}">
+        <input type="hidden" name="date" value="{{ request[2].split()[0] }}">
+        Update the "time" field with the correct name from the database -->
+        <!-- <input type="hidden" name="time" value="{{ request[2].split()[1] }}">
+        <input type="radio" name="confirmation_status" value="accept" required> Accept
+        <input type="radio" name="confirmation_status" value="reject" required> Reject
+
+        <input type="submit" value="Submit">
+    </form>
+    {% endfor %}
+</body>
+</html> --> 
+
+{% for request in interview_requests %}
+<h2>Interviewee: {{ request[2] }}</h2>
+<p>Interviewee email: {{request[1]}}</p>
+<p>Date: {{ request[3].split()[0] }}</p>
+<p>Time: {{ request[3].split()[1] }}</p>
+<form method="POST" action="/confirm">
+    <input type="hidden" name="interviewee_name" value="{{ request[2] }}">
+    <input type="hidden" name="interviewer_email" value="{{ request[5] }}">
+    <input type="hidden" name="interviewee_email" value="{{ request[1] }}">
+    <input type="hidden" name="date" value="{{ request[3].split()[0] }}">
+    <input type="hidden" name="time" value="{{ request[3].split()[1] }}">
+    <input type="radio" name="confirmation_status" value="accept" required> Accept
+    <input type="radio" name="confirmation_status" value="reject" required> Reject
+    <input type="submit" value="Submit">
+</form>
+{% endfor %}
