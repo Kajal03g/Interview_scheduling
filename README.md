@@ -27,11 +27,12 @@ The application has greatly improved the efficiency of our interview scheduling 
 ## Screenshots
 - Interviewers can access the schedule form by visiting the **/interviewer/schedule** route in a web browser. Interviewers can enter their name, email, date, and time for the interview slot they want to schedule.
   
-![Interviewer Schedule Input - Personal - Microsoft​ Edge 06-09-2023 14_22_22](https://github.com/Kajal03g/Interview_scheduling/assets/120003423/715094d8-2e11-4edf-aa63-1afce5f14a48)
+![Interviewer Schedule Input and 2 more pages - Personal - Microsoft​ Edge 18-09-2023 00_52_37](https://github.com/Kajal03g/Interview_scheduling/assets/120003423/ed1bcd74-6320-4ec1-8b97-0aa996fcc3d7)
 
 - The available slots are displayed on the page, allowing interviewers to see the slots they and others have scheduled. Interviewees can access the request form by visiting the **/interviewee/request** route in a web browser. Interviewees can enter their name, email, and select an available interview slot from the displayed options.
 
-![Interviewer Schedule Input - Personal - Microsoft​ Edge 06-09-2023 14_22_34](https://github.com/Kajal03g/Interview_scheduling/assets/120003423/1f79dfa8-ad73-4e1e-9ee3-245f8821a9e1)
+![Interviewee Request and 2 more pages - Personal - Microsoft​ Edge 18-09-2023 00_53_52](https://github.com/Kajal03g/Interview_scheduling/assets/120003423/3d306861-0ce3-49a8-a671-4d12db579352)
+
 
 - Upon submission, the code sends an approval email to the interviewer responsible for the selected slot. The email includes details of the interviewee's request and a link for the interviewer to confirm the request.
 
@@ -39,7 +40,7 @@ The application has greatly improved the efficiency of our interview scheduling 
 
 - Interviewers can access the confirmation page by visiting the **/confirm** route in a web browser. Interviewers see a list of pending interviewee requests, including the interviewee's name, email, requested date, and time. Interviewers can choose to confirm or reject interviewee requests. This action updates the **confirmed** column in the database.
 
-![Interviewee Request - Personal - Microsoft​ Edge 06-09-2023 14_23_54](https://github.com/Kajal03g/Interview_scheduling/assets/120003423/d93dee70-821f-4eaf-acca-d5701f26a675)
+![Interviewer Schedule Input and 2 more pages - Personal - Microsoft​ Edge 18-09-2023 00_52_37](https://github.com/Kajal03g/Interview_scheduling/assets/120003423/dccd331e-d030-4069-a01a-6191ffd29dd2)
 
 - If an interviewee's request is confirmed, the code sends a confirmation email to the interviewee with details of the confirmed interview.
 If a request is rejected, the code sends a rejection email to the interviewee, prompting them to book another available slot.
