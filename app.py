@@ -48,28 +48,6 @@ conn.commit()
 # Close the connection after creating tables
 conn.close()
 
-# from google.oauth2.credentials import Credentials
-
-# json_key_content = {
-#     "type": "service_account",
-#     "project_id": "schedulingproject-393817",
-#     "private_key_id": "0f9452ece5d3ccd1543b6ef5590859ebab127cac",
-#     "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDbCKszPp81wwnT\nhaKaj+Z9h5Nk4L7EQsbz111SSW53BCAMOyIQibPD6DzZNL5T139YFv75r6WLbavo\nbsYQei5tLNsvNYVHRFPVG9fLL9Y2L677JIFVwxhjJLKHstwgUvUct6qbXT7kLNhD\n4KGSTocECRWhLb9dYrRqeW0+U9FCP0i0qYFPgR+0dE0d4SOJQzjLQjlFLQ/nT1l7\n1+JDn7m97jfOkWDBnIVD9ixfW19YCne/OAZBDq6SddLxnxY892/MzrfcXws3wIKy\nu5+qx+YPvJr4Q2C64bf0basQW7nd9cIYwrjqzhGX7CVJrpDGCIwKTdUeVYiQmv6W\ndNSxL1WFAgMBAAECggEADY1EQRKV+YFnPryXxRYJLelw/6lTdEN+GWvQ8ic+m+4t\nPhnR2jxthb39NyJ8ciXfqFIdQCfox1nSQeUfVmP7h7ViRvykkeES325uaWZndl54\nkOupyuYcFf+ZF4Hup7CqSgwSagluEOJgwRZeuMrTWgxmglyZE0yTmruHkaHQTS0N\njkKEnJnFntRPGvrE/J0xOE6LMHur4wRcCMZNePPlkY8QFgB7hQDKL4crnsey7UlU\nShtepe2QsmEuGdUm3PYISrDEC1ijIv4bZSPamzMC0e510ocQOi34ToqN55AFlR8y\nycAizJQDg6tXY3abIkVde1wOQLmh9cvotP7cW/VKMQKBgQDuH5jFY173hi1aV8iD\nM06KdFVtV8msuHt2tWYueNGi9TJoWmlePnvYZg8VXnYfrThIlnjYchifWfFhAUjN\npGihtMYFHNYtONu6uCcbrlFE6frVom5ukIFqP/ZMBmBpwdh/CPknjn2SylYlQLZv\njXjjeYbOGgfM/CDeQDpAS88hDQKBgQDrejJsqPczdFRQ4O+viZlbXBs+KDJBhTOC\np6fC7aneli+nMNxvubAa4TSOnXA/Uin6f5wfiCG9nMMAibInK2pUMtdq3Mk5L3Bz\nzg34iilUnx2ICEyfVrc66UQcA6mQyufTAvnSDKk27GI3NLYYbpVVyuFAsYqf89xM\n363PMjo4WQKBgQDlBY6xifl0p6BHG9bGGTqY/3qKR7y4WlakvaMhXyKBUMLCivJ8\nqiwC3WX0b328yaUwa0ifJF16Jc96NPoIju/zVyJ9GFcF94Gd/C/g969CUKfngOol\nfOZ7gjkotZlVHhNTWxYHbYxo+iIQgkT01WRHpEJ7R53pETWrjKp53G/CoQKBgH1j\n2ooGB2x825Ed1kQxD1qY12Dn4qsFFQLT5/9isvv2GXX8DMXpqR8HIQd4SpdNV1Eu\ntqILyXvAiA43RIibE8m2MQOUggpTepwP81yPpaaL/Bu9359Re8yA/mW0hYy2n2+7\nu+/gEhNPGJWxGe40pIzEteHPKLQ4FO1Shqk4Y8wxAoGANAyLPHhM9SxJ891iPUhI\n180tcC5aWELmpvObJOoFRdkhJmtRmOd8RYFRDn9JL/dMdbCtpGk9cXRp5bB6r8u1\nA6jD25NEkeJADatqdK9O46mzVgHw6e2JqDPivlmMilqY+DQTDeVBXR3b3ByJTqGl\nUg2bqZD5UtWLztFhY6qoxOk=\n-----END PRIVATE KEY-----\n",
-#     "client_email": "interviewscheduling@schedulingproject-393817.iam.gserviceaccount.com",
-#     "client_id": "113561895603016446654",
-#     "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-#     "token_uri": "https://oauth2.googleapis.com/token",
-#     "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-#     "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/interviewscheduling%40schedulingproject-393817.iam.gserviceaccount.com",
-#     "universe_domain": "googleapis.com"
-# }
-# from googleapiclient.discovery import build
-# from google.oauth2 import service_account
-# # Create credentials using the service account info
-# credentials = service_account.Credentials.from_service_account_info(json_key_content)
-
-# # Build the Google Calendar API service
-# service = build('calendar', 'v3', credentials=credentials)
 
 @app.route('/interviewer/schedule', methods=['GET','POST'])
 def interviewer_schedule():
@@ -102,11 +80,7 @@ def interviewer_schedule():
 
     return render_template('interviewer_schedule.html', name=name, email=email,
                            scheduled_datetime=scheduled_datetime, available_slots=available_slots)
-        # Generate the Google Meet link
-        # google_meet_link = generate_google_meet_link()
-
-    #     
-
+        
     # # Render a template to display the scheduled interview details to the interviewee
     # return render_template('interviewer_schedule.html', name=name, email=email, scheduled_datetime=scheduled_datetime)
 
@@ -211,7 +185,7 @@ def confirm_interview():
                 # Send an email to the interviewee with the confirmed details and Google Meet link
             subject = 'Interview Confirmation'
             body = f"Dear {interviewee_email},\n\nYour interview on {date} at {time} has been confirmed. " \
-                f"The Google Meet link is: \n\nBest regards,\nThe Interview Scheduler"
+                f" \n\nBest regards,\nThe Interview Scheduler"
             msg = Message(subject=subject, recipients=[interviewee_email], body=body)
             mail.send(msg)
             
