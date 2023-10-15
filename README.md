@@ -26,8 +26,7 @@ The application has greatly improved the efficiency of our interview scheduling 
 
 ## Screenshots
 - Interviewers can access the schedule form by visiting the **/interviewer/schedule** route in a web browser. Interviewers can enter their name, email, date, and time for the interview slot they want to schedule.
-  
-![Interviewer Schedule Input and 2 more pages - Personal - Microsoft​ Edge 18-09-2023 00_52_37](https://github.com/Kajal03g/Interview_scheduling/assets/120003423/ed1bcd74-6320-4ec1-8b97-0aa996fcc3d7)
+  ![Interviewee Request and 2 more pages - Personal - Microsoft​ Edge 18-09-2023 00_53_52](https://github.com/Kajal03g/Interview_scheduling/assets/120003423/0c6b08b7-fcd7-48eb-929c-77bc40cebfab)
 
 - The available slots are displayed on the page, allowing interviewers to see the slots they and others have scheduled. Interviewees can access the request form by visiting the **/interviewee/request** route in a web browser. Interviewees can enter their name, email, and select an available interview slot from the displayed options.
 
