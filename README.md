@@ -34,12 +34,12 @@ The application has greatly improved the efficiency of our interview scheduling 
 
 
 - Upon submission, the code sends an approval email to the interviewer responsible for the selected slot. The email includes details of the interviewee's request and a link for the interviewer to confirm the request.
-
-![Editing Interview_scheduling_README md at main · Kajal03g_Interview_scheduling - Google Chrome 06-09-2023 14_24_21 (2)](https://github.com/Kajal03g/Interview_scheduling/assets/120003423/9b9b1e30-24c5-450b-aa38-5bca4969d30f)
+- 
+![Interview_scheduling_README md at main · Kajal03g_Interview_scheduling - Google Chrome 16-10-2023 01_31_53](https://github.com/Kajal03g/Interview_scheduling/assets/120003423/3acc5396-4d52-4391-81c2-e01a76d5958f)
 
 - Interviewers can access the confirmation page by visiting the **/confirm** route in a web browser. Interviewers see a list of pending interviewee requests, including the interviewee's name, email, requested date, and time. Interviewers can choose to confirm or reject interviewee requests. This action updates the **confirmed** column in the database.
 
-![Interviewer Schedule Input and 2 more pages - Personal - Microsoft​ Edge 18-09-2023 00_52_37](https://github.com/Kajal03g/Interview_scheduling/assets/120003423/dccd331e-d030-4069-a01a-6191ffd29dd2)
+![Confirm Interview Requests and 3 more pages - Personal - Microsoft​ Edge 16-10-2023 01_32_38](https://github.com/Kajal03g/Interview_scheduling/assets/120003423/3fd8f326-60fd-4186-8747-552262ad5e07)
 
 - If an interviewee's request is confirmed, the code sends a confirmation email to the interviewee with details of the confirmed interview.
 If a request is rejected, the code sends a rejection email to the interviewee, prompting them to book another available slot.
