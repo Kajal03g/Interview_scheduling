@@ -30,7 +30,7 @@ The application has greatly improved the efficiency of our interview scheduling 
 
 - The available slots are displayed on the page, allowing interviewers to see the slots they and others have scheduled. Interviewees can access the request form by visiting the **/interviewee/request** route in a web browser. Interviewees can enter their name, email, and select an available interview slot from the displayed options.
 
-![Interviewee Request and 2 more pages - Personal - Microsoft​ Edge 18-09-2023 00_53_52](https://github.com/Kajal03g/Interview_scheduling/assets/120003423/3d306861-0ce3-49a8-a671-4d12db579352)
+![Interviewee Request and 2 more pages - Personal - Microsoft​ Edge 18-09-2023 00_53_52](https://github.com/Kajal03g/Interview_scheduling/assets/120003423/556432bb-dc1e-49bc-81c1-0ef4b209fdc0)
 
 
 - Upon submission, the code sends an approval email to the interviewer responsible for the selected slot. The email includes details of the interviewee's request and a link for the interviewer to confirm the request.
