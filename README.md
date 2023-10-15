@@ -44,7 +44,7 @@ The application has greatly improved the efficiency of our interview scheduling 
 - If an interviewee's request is confirmed, the code sends a confirmation email to the interviewee with details of the confirmed interview.
 If a request is rejected, the code sends a rejection email to the interviewee, prompting them to book another available slot.
 
-![Interview Confirmation - kaja bt21cs22@opju ac in - OP Jindal University Mail - Google Chrome 06-09-2023 14_26_04 (3)](https://github.com/Kajal03g/Interview_scheduling/assets/120003423/f0f1c804-58d0-4821-b0e4-b0ecbdf25166)
+![Interview Confirmation - kaja bt21cs22@opju ac in - OP Jindal University Mail - Google Chrome 06-09-2023 14_26_04 (3)](https://github.com/Kajal03g/Interview_scheduling/assets/120003423/c073521a-f2c5-4f9e-934c-08e27fc38135)
 
 
 
