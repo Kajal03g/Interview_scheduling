@@ -2,7 +2,7 @@
 
 ## Problem Statement
 
-Navrojan the job portal of our organization, Stuvalley, needs a system to streamline the process of scheduling and managing interviews between interviewers and interviewees. The current manual process is time-consuming and error-prone.
+Navrojan the job portal of our organization, Stuvalley, needs a system to streamline the process of scheduling and managing interviews between interviewers and interviewees. The current manual process is time-consuming and error-prone
 
 ## Solution
 
